@@ -3,8 +3,8 @@ import { timeline } from "@/data/about";
 import TimelineItem from "@/components/TimelineItem";
 
 export const metadata: Metadata = {
-  title: "経歴 | ruirui",
-  description: "学歴・職歴・スキルセットの概要",
+  title: "活動経歴 | ruirui",
+  description: "今までの活動の紹介",
 };
 
 export default function AboutPage() {

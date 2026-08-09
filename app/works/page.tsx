@@ -3,7 +3,7 @@ import { works } from "@/data/works";
 
 export const metadata: Metadata = {
   title: "作品 | ruirui",
-  description: "制作物・活動記録",
+  description: "制作物",
 };
 
 export default function WorksPage() {
