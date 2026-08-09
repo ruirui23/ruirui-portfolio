@@ -8,7 +8,10 @@ export default function Home() {
       {/* Profile */}
       <section className="mb-8">
         <h1 className="text-4xl font-medium tracking-tight text-foreground mb-6">
-          {profile.name}
+          <ruby>
+            和泉瑠生
+            <rt className="text-sm font-normal tracking-widest">いずみるい</rt>
+          </ruby>
         </h1>
         <p className="text-base leading-relaxed text-foreground max-w-prose whitespace-pre-line">
           {profile.bio}
