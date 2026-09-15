@@ -28,6 +28,41 @@ export default function HobbiesPage() {
               <p className="text-sm text-muted leading-relaxed">
                 {hobby.description}
               </p>
+
+              {hobby.detail && (
+                <details className="group mt-4">
+                  <summary className="cursor-pointer list-none text-xs text-muted hover:text-foreground transition-colors inline-flex items-center gap-1">
+                    {hobby.detail.buttonLabel}
+                    <span className="transition-transform group-open:rotate-180">
+                      ▾
+                    </span>
+                  </summary>
+                  <div className="mt-4 space-y-5 rounded-xl border border-zinc-200 dark:border-zinc-800 p-5">
+                    {hobby.detail.groups.map((group) => (
+                      <div key={group.heading}>
+                        <p className="text-sm font-medium text-foreground mb-1">
+                          {group.heading}
+                          {group.note && (
+                            <span className="ml-2 text-xs font-normal text-muted">
+                              {group.note}
+                            </span>
+                          )}
+                        </p>
+                        <ul className="space-y-1">
+                          {group.items.map((item) => (
+                            <li
+                              key={item}
+                              className="text-sm text-muted leading-relaxed"
+                            >
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                </details>
+              )}
             </article>
           ))}
         </div>
