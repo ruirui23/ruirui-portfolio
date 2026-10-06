@@ -15,7 +15,7 @@ const linkButtons = [
 
 export default function WorksPage() {
   return (
-    <div className="py-20">
+    <div className="py-20 max-w-6xl mx-auto">
       <p className="text-xs font-medium tracking-widest text-muted uppercase mb-2">
         Works
       </p>
