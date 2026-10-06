@@ -4,7 +4,7 @@ import SectionPreviewCard from "@/components/SectionPreviewCard";
 
 export default function Home() {
   return (
-    <div className="py-24">
+    <div className="py-24 max-w-2xl mx-auto">
       {/* Profile */}
       <section className="mb-8">
         <h1 className="text-4xl font-medium tracking-tight text-foreground mb-6">
