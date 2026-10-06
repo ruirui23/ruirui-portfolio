@@ -55,7 +55,7 @@ export default function Timeline() {
               {/* 日付 */}
               <p className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 dark:text-blue-400 mb-2">
                 <span aria-hidden>🗓️</span>
-                {entry.date}
+                {entry.date.slice(0, 7)}
               </p>
 
               {/* カード */}
